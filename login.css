@@ -1,0 +1,247 @@
+@import url(../styles/style.css);
+
+body {
+    background-color:beige;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: -50;
+}
+ .nav-bar-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+
+.login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+ .login-form {
+    width: 360px;
+    max-width: 590px;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+} 
+
+.login-card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+ .login-card-title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    color: #222325;
+    letter-spacing: 0%;
+    text-align: center;
+} 
+
+.login-card-title p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 4px;
+}
+
+.form-group:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4A505C;
+    letter-spacing: 0.2px;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.form-group img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 33px;
+    right: 12px;
+    cursor: pointer;
+    align-self:end;
+}
+
+/* #lupa-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: #333333;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    cursor: pointer;
+}  */
+
+a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+ .login-card-action {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.login-button {
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #3ECF4C;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-button {
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #E2FCD9;
+    color: #3ECF4C;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.signup-button a {
+    display: block;
+    width: 100%;
+    right: 138px;
+    text-decoration: none;
+    color: #3ECF4C;
+    cursor: pointer;
+
+}
+
+.login-card-action p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #4A505C;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.google-button img {
+    width: 15px;
+    height: 20px;
+}
+
+span {
+    color: red;
+}
+ 

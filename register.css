@@ -1,0 +1,374 @@
+@import url(../styles/style.css);
+
+body {
+    background-color:beige;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    position: static;
+    top: 0;
+    z-index: -50;
+}
+
+.nav-bar-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.container-register {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+.card-register {
+    width: 320px;
+    max-width: 590px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 28px;
+}
+
+.card-register-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-register-title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    color: #222325;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.card-register-title p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.form-register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.name-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+
+.name-form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+}    
+
+.email-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+.email-form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+}
+
+.gender-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gender-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+.gender-form select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+}
+
+.phone-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.phone-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+
+.phone-form input {
+    width: auto;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 135px;
+    margin-top: -48px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.country-code {
+    width: 78px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.country-code select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-align: middle;
+    margin-left: 41px;
+    margin-top: -11px;
+}
+
+.country-code img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: -35px;
+    border: 1px solid #3A3541;
+    background-color: #3A3541;
+}
+
+.password-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+.password-form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+}
+
+
+.confirm-password-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.confirm-password-form label {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    padding:4px;
+}
+
+.confirm-password-form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #3A3541;
+    border-radius: 6px;
+}
+
+
+a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+.card-button-action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.register-button {
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #3ECF4C;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #E2FCD9;
+    color: #3ECF4C;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-button a {
+    display: block;
+    width: 100%;
+    right: 138px;
+    text-decoration: none;
+    color: #3ECF4C;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #4A505C;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+span {
+    color:red
+}
+
+
+@media (min-width: 590px) {
+    .card-register {
+        width: 100%;
+        max-width: 590px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        padding: 50px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Video Belajar</title>
+    <link 
+        rel="shortcut icon" 
+        href="./images/Logo.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar-container"><img src="./images/Logo.png" alt="video-belajar-logo">
+        </div>
+    </header>
+
+    <div class="container-register">
+        <div class="card-register">
+            <div class="card-register-title">
+                <h1>Pendaftaran Akun</h1>
+                <p>Yuk, daftarkan akun sekarang juga!</p>
+            </div>
+
+            <form class="form-register">
+                <div class="name-form">
+                    <label for="name">Nama Lengkap <span>*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="email-form">
+                    <label for="email">E-Mail <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="gender-form">
+                    <label for="gender">Jenis Kelamin <span>*</span></label>
+                    <select id="gender" name="gender">
+                        <option value="female">Wanita</option>
+                        <option value="male">Pria</option>
+                    </select>
+                </div>
+                <div class="phone-form">
+                    <label for="phone">No. Hp <span>*</span></label>
+                    <div class="country-code">
+                        <select>
+                            <option>+62</option>
+                        </select>
+                        <img src="./images/Indonesia (ID).png" alt="indonesia-flag">
+                    </div>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="password-form">
+                    <label for="password">Kata Sandi <span>*</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="confirm-password-form">
+                    <label for="confirm-password">Konfirmasi Kata Sandi <span>*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>  
+                <a href="#" class="forgot">Lupa Password?</a>
+                <div class="card-button-action">
+                    <button type="submit" class="register-button">Daftar     
+                    </button>
+                     <button type="button" class="login-button"><a href="index.html" class="login-button">Masuk</a></button>
+                </div>
+                    <p class="divider">atau</p>
+                    <button class="google-button">
+                        <img src="./images/logos_google-icon.png" alt="google-icon">
+                        <p>Daftar dengan Google</p>
+                    </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+    <!-- <header>
+
+    </header>
+    <div>
+        <h1>Pendaftaran Akun</h1>
+        <p>Yuk, daftarkan akunmu sekarang juga!</p>
+    </div>
+    <div>
+        <form action="home.html" method="post">
+            <label for="name">Nama Lengkap</label>
+            <input type="name" id="name" name="name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="gender">Jenis Kelamin</label>
+            <input type="text" id="gender" name="gender" required>
+            <br>
+            <label for="phone">No Hp</label>
+                <div class="phone-input-container">
+                    <select id="countryCode" name="countryCode">
+                        <option value="62" selected><img src="./images/Indonesia (ID).png" alt="flag-logo"> +62 </option>
+                        <option value="1">US +1</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            <br>
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" required>
+            <img src="./images/mdi_eye-off.png" alt="eye-off-icon">
+            <br>
+            <label for="password">Konfirmasi Kata Sandi</label>
+            <input type="password" id="password" required>
+            <img src="./images/mdi_eye-off.png" alt="eye-off-icon">
+            <p>Lupa Password?</p>
+            <br>
+            <button type="submit">Daftar</button>
+            <button type="submit">Masuk</button>
+            <p>atau</p>
+            <button type="submit">
+                <img src="./images/logos_google-icon.png" alt="google-icon">Daftar dengan Google</button>
+        </form>
+    </div> -->
+    
