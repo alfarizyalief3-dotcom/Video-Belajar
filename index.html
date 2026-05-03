@@ -11,60 +11,65 @@
     <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
-    <header>
-     <div class="nav-bar-container">
-        <img src="./images/Logo.png" alt="video-belajar-logo">
-     </div>
-    </header>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-box">
+                <img src="./images/Logo-videobelajar.png">
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Login -->
     <main class="login-container">
         <div class="login-form">
             <div class="login-card-title">
-             <h1>Masuk ke Akun</h1>
-             <p>Yuk, lanjutin belajarmu di videobelajar</p>
-             </div>
-             <form action="#" method="post">
-                 <div class="form-group">
-                 <label for="email" id="email">E-Mail <span>*</span></label>
-                 <input  
+                <h1>Masuk ke Akun</h1>
+                <p>Yuk, lanjutin belajarmu di videobelajar</p>
+            </div>
+            <form action="#" method="post">
+                <div class="form-email">
+                    <label for="email" id="email">E-Mail <span>*</span></label>
+                    <input  
                     type="email"  
                     id="email" 
                     name="email" 
                     required
                     />
-                 </div>   
-                 <div class="form-group">
-                 <label for="password">Kata Sandi <span>*</span></label>
-                 <input
+                </div>   
+                <div class="form-password">
+                    <label for="password">Kata Sandi <span>*</span></label>
+                    <input
                     type="password" 
                     id="password" 
                     name="password" 
                     required>
-                 <img src="./images/mdi_eye-off.png" alt="eye-off-icon">
-                 
-                 </div>
-                 <a href="#">Lupa Password?</a>
-                 <!-- <div id="lupa-password">
-                     <a href="#">Lupa Password?</a>
-                 </div> -->
-                 <div class="login-card-action">
+                    <img src="./images/mdi_eye-off.png" alt="eye-off-icon">
+                </div>
+                <div class="lupa">
+                    <a href="#">Lupa Password?</a>
+                </div>
+                <div class="login-card-action">
                     <button type="submit"
-                     class="login-button">Masuk
+                    class="login-button">Masuk
                     </button>
                     <button type="button" class=" signup-button"><a href="./register.html"
-                    >Daftar</a>
+                        >Daftar</a>
                     </button>
-                    <p class="login-card-action">atau</p>
-                    <button type="button" class="login-button google-button">
-                         <img src="./images/logos_google-icon.png"
-                            alt="google-icon"> 
-                         <p>Masuk dengan Google</p>
+                    <p>atau</p>
+                </div>
+                <div class="google">
+                    <button type="button" class="google-button">
+                        <img src="./images/logos_google-icon.png"
+                        alt="google-icon"> 
+                        <p>Masuk dengan Google</p>
                     </button>          
-                 </div>
-                 
+                </div>
             </form>
         </div>
-        
     </main>
+    <!-- Login -->
     
 </body>
 </html>
