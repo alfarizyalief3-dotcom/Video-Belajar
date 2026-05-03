@@ -1,54 +1,99 @@
 @import url(../styles/style.css);
 
 body {
-    background-color:beige;
+    background-color:#fffdf3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
 }
 
-header {
-    background-color: white;
-    position: static;
-    top: 0;
-    z-index: -50;
-}
-
-.nav-bar-container {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px 24px;
+.container {
+    width: 80%;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.container-register {
-    min-height: 100vh;
+
+.navbar {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+
+.navbar-box {
+    width: 154px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+@media (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .navbar {
+        height: 80px;
+    }
+    .navbar-box {
+        width: 237px;
+        height: 56px;
+    }
+    .navbar-box img {
+        width: 193px;
+        height: 30px;
+    }
+}
+
+
+/* Register */
+
+.register-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 24px;
+    justify-content: center;
+    margin: 28px 0px;
+} 
+
+@media (min-width: 575px) {
+    .register-container {
+        margin: 64px 0px;
+    }
 }
 
 
-.card-register {
-    width: 320px;
-    max-width: 590px;
+.register-form {
+    width: 360px;
+    height: fit-content;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 28px;
+    gap: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+} 
+
+@media (min-width: 992px) {
+    .register-form {
+        width: 590px;
+        padding: 36px;
+        gap: 36px;
+    }
 }
 
-.card-register-title {
-    width: 100%;
+.register-card-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,16 +101,16 @@ header {
     gap: 10px;
 }
 
-.card-register-title h1 {
+.register-card-title h1 {
     font-weight: 600;
     font-size: 24px;
     line-height: 110%;
     color: #222325;
     letter-spacing: 0%;
     text-align: center;
-}
+} 
 
-.card-register-title p {
+.register-card-title p {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -74,228 +119,299 @@ header {
     text-align: center;
 }
 
-.form-register {
+@media  (min-width: 992px) {
+    .register-card-title h1 {
+        font-size: 32px;
+    }
+    .register-card-title p {
+        font-size: 16px;
+    }
+}
+
+
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
+}
+
+@media (min-width: 992px) {
+    form {
+        gap: 16px;
+    }
 }
 
 .name-form {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    gap: 4px;
 }
 
 .name-form label {
-    width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #333333;
+    color: #4A505C;
     letter-spacing: 0.2px;
-    padding:4px;
+    width: 100%;
 }
 
 
 .name-form input {
     width: 100%;
     height: 48px;
-    border: 1px solid #3A3541;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
     border-radius: 6px;
 }    
+
+@media (min-width: 992px) {
+    .name-form label {
+        font-size: 16px;
+    }
+}
+
 
 .email-form {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 4px;
 }
 
 .email-form label {
-    width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #333333;
+    color: #4A505C;
     letter-spacing: 0.2px;
-    padding:4px;
+    width: 100%;
 }
+
 
 .email-form input {
     width: 100%;
     height: 48px;
-    border: 1px solid #3A3541;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
     border-radius: 6px;
+}    
+
+@media (min-width: 992px) {
+    .email-form label {
+        font-size: 16px;
+    }
 }
 
-.gender-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.gender-form label {
-    width: 100%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #333333;
-    letter-spacing: 0.2px;
-    padding:4px;
-}
-
-.gender-form select {
-    width: 100%;
-    height: 48px;
-    border: 1px solid #3A3541;
-    border-radius: 6px;
-}
 
 .phone-form {
     width: 100%;
     display: flex;
+    gap: 4px;
     flex-direction: column;
-    justify-content: center;
 }
 
-
 .phone-form label {
-    width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #333333;
+    color: #4A505C;
     letter-spacing: 0.2px;
-    padding:4px;
+    width: 100%;
 }
-
-
-.phone-form input {
-    width: auto;
+.phone {
     height: 48px;
-    border: 1px solid #3A3541;
-    border-radius: 6px;
-    position: relative;
-    margin-left: 135px;
-    margin-top: -48px;
-    font-weight: 400;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;    
+    gap: 10px;
 }
 
 .country-code {
-    width: 78px;
+    width: 100px;
     height: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.country-code select {
-    width: 100%;
-    height: 48px;
-    border: 1px solid #3A3541;
     border-radius: 6px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #333333;
-    letter-spacing: 0.2px;
-    text-align: middle;
-    margin-left: 41px;
-    margin-top: -11px;
+    border: 1px #3A35411F solid;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .country-code img {
+    background: #f9f9f9;
     width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    margin-top: -35px;
-    border: 1px solid #3A3541;
-    background-color: #3A3541;
+    margin-right: 5px;
 }
 
-.password-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.password-form label {
-    width: 100%;
-    font-weight: 400;
+.country-code select {
+    border: none;
+    background: transparent;
+    outline: none;
     font-size: 14px;
-    line-height: 140%;
-    color: #333333;
-    letter-spacing: 0.2px;
-    padding:4px;
+    color: #4A505C;
 }
 
-.password-form input {
-    width: 100%;
+.phone input {
     height: 48px;
-    border: 1px solid #3A3541;
+    flex: 1;
+    padding: 10px;
+    border: 1px #3A35411F solid;
     border-radius: 6px;
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .phone-form {
+        margin-bottom: 16px;      
+    }
+    .phone-form label, .country-code select {
+        font-size: 16px;
+    }
 }
 
 
-.confirm-password-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.confirm-password-form label {
-    width: 100%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #333333;
-    letter-spacing: 0.2px;
-    padding:4px;
-}
-
-.confirm-password-form input {
-    width: 100%;
-    height: 48px;
-    border: 1px solid #3A3541;
-    border-radius: 6px;
-}
-
-
-a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    color: #333333;
-    letter-spacing: 0.2px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    cursor: pointer;
-}
-
-.card-button-action {
+.form-password {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    position: relative;
+    gap: 4px;
 }
 
-.register-button {
+
+.form-password label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4A505C;
+    letter-spacing: 0.2px;
+    width: 100%;
+}
+
+.form-password input {
+    width: 100%;
+    height: 48px;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    .form-password label {
+        font-size: 16px;
+    }
+}
+
+.form-password img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 35px;
+    right: 12px;
+    cursor: pointer;
+    align-self:end;
+}
+
+@media (min-width: 992px) {
+    .form-password img {
+        top: 40px;
+    }
+}
+
+
+.form-confirm-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 4px;
+}
+
+
+.form-confirm-password label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4A505C;
+    letter-spacing: 0.2px;
+    width: 100%;
+}
+
+.form-confirm-password input {
+    width: 100%;
+    height: 48px;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    .form-confirm-password label {
+        font-size: 16px;
+    }
+}
+
+.form-confirm-password img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 35px;
+    right: 12px;
+    cursor: pointer;
+    align-self:end;
+}
+
+@media (min-width: 992px) {
+    .form-confirm-password img {
+        top: 40px;
+    }
+}
+
+.lupa {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+
+.lupa a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .lupa a {
+        font-size: 16px;
+    }
+}
+
+.register-card-action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-button {
     width: 100%;
     height: 34px;
     border-radius: 10px;
@@ -307,43 +423,83 @@ a {
     letter-spacing: 0.2px;
     border: none;
     cursor: pointer;
+    margin-bottom: 16px;
 }
 
+@media (min-width: 992px) {
+    .login-button {
+        height: 42px;
+        font-size: 16px;
+    }
+}
 .login-button {
     width: 100%;
-    height: 25px;
+    height: 34px;
     border-radius: 10px;
     background-color: #E2FCD9;
+    border: none; 
+    margin-bottom: 20px;
+}
+
+.login-button a {
+    width: 100%;
+    text-decoration: none;
     color: #3ECF4C;
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.2px;
-    border: none;
     cursor: pointer;
-    text-decoration: none;
+    justify-content: center;
+    display: flex;
     text-align: center;
 }
 
-.login-button a {
-    display: block;
+@media (min-width: 992px) {
+    .login-button {
+        height: 42px;
+        margin-bottom: 24px;
+    }
+    .login-button a {
+        font-size: 16px;
+    }
+}
+.register-card-action p {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .register-card-action p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.google {
     width: 100%;
-    right: 138px;
-    text-decoration: none;
-    color: #3ECF4C;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
 .google-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px 0px;
     gap: 8px;
     width: 100%;
     height: 34px;
     border-radius: 10px;
+    border: 1px solid #F1F1F1;
     background-color: #FFFFFF;
+    
+}
+
+.google-button p {
     color: #4A505C;
     font-weight: 700;
     font-size: 14px;
@@ -352,23 +508,27 @@ a {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    text-align: center;
 }
+
+.google-button img {
+    width: 15px;
+    height: 20px;
+}
+
+@media (min-width: 992px) {
+    .google-button {
+        height: 42px;
+    }
+    .google-button p {
+        font-size: 16px;
+    }
+}
+
 
 span {
     color:red
 }
 
 
-@media (min-width: 590px) {
-    .card-register {
-        width: 100%;
-        max-width: 590px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;
-        padding: 50px;
-    }
-}
+
+/* Register */
