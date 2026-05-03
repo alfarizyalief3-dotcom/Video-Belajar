@@ -1,44 +1,87 @@
 @import url(../styles/style.css);
 
+
 body {
-    background-color:beige;
+    background-color:#fffdf3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
 }
 
-header {
+/* Navbar */
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     position: sticky;
-    top: 0;
-    z-index: -50;
 }
- .nav-bar-container {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px 16px;
+
+
+.navbar-box {
+    width: 154px;
+    height: 42px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 } 
 
+@media (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .navbar {
+        height: 80px;
+    }
+    .navbar-box {
+        width: 237px;
+        height: 56px;
+    }
+    .navbar-box img {
+        width: 193px;
+        height: 30px;
+    }
+}
+/* Navbar */
 
+
+/* Login */
 .login-container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 28px;
 } 
 
- .login-form {
+@media (min-width: 575px) {
+    .login-container {
+        margin-top: 64px;
+    }
+}
+
+@media (min-width: 992px) {
+    .login-container {
+        margin-top: 163px;
+    }
+}
+
+.login-form {
     width: 360px;
-    max-width: 590px;
     height: fit-content;
     background-color: white;
     display: flex;
@@ -47,7 +90,17 @@ header {
     justify-content: center;
     padding: 20px;
     gap: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 } 
+
+@media (min-width: 992px) {
+    .login-form {
+        width: 590px;
+        height: 617px;
+        padding: 36px;
+        gap: 36px;
+    }
+}
 
 .login-card-title {
     display: flex;
@@ -57,7 +110,7 @@ header {
     gap: 10px;
 }
 
- .login-card-title h1 {
+.login-card-title h1 {
     font-weight: 600;
     font-size: 24px;
     line-height: 110%;
@@ -75,16 +128,24 @@ header {
     text-align: center;
 }
 
-form{
+@media  (min-width: 992px) {
+    .login-card-title h1 {
+        font-size: 32px;
+    }
+    .login-card-title p {
+        font-size: 16px;
+    }
+}
+
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 18px;
 }
 
-.form-group {
+.form-email {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -92,14 +153,11 @@ form{
     justify-content: center;
     position: relative;
     gap: 4px;
-}
-
-.form-group:nth-child(2) {
-    margin-top: 20px;
     margin-bottom: 12px;
 }
 
-.form-group label {
+
+.form-email label {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -108,7 +166,7 @@ form{
     width: 100%;
 }
 
-.form-group input {
+.form-email input {
     width: 100%;
     height: 48px;
     border: 1px #3A35411F solid;
@@ -116,53 +174,101 @@ form{
     border-radius: 6px;
 }
 
-.form-group img {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 33px;
-    right: 12px;
-    cursor: pointer;
-    align-self:end;
+@media (min-width: 992px) {
+    .form-email {
+        margin-bottom: 16px;      
+    }
+    .form-email label {
+        font-size: 16px;
+    }
 }
 
-/* #lupa-password {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    color: #333333;
-    letter-spacing: 0.2px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    cursor: pointer;
-}  */
 
-a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    color: #333333;
-    letter-spacing: 0.2px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    cursor: pointer;
-}
-
- .login-card-action {
-    margin-top: 24px;
+.form-password {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    position: relative;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+
+.form-password label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4A505C;
+    letter-spacing: 0.2px;
+    width: 100%;
+}
+
+.form-password input {
+    width: 100%;
+    height: 48px;
+    border: 1px #3A35411F solid;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    .form-password {
+        margin-bottom: 16px;      
+    }
+    .form-password label {
+        font-size: 16px;
+    }
+}
+
+.form-password img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 35px;
+    right: 12px;
+    cursor: pointer;
+    align-self:end;
+}
+
+@media (min-width: 992px) {
+    .form-password img {
+        top: 40px;
+    }
+}
+
+.lupa {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 24px;
+}
+
+.lupa a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .lupa {
+        margin-bottom: 24px;
+    }
+    .lupa a {
+        font-size: 16px;
+    }
+}
+
+.login-card-action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-button {
@@ -177,36 +283,48 @@ a {
     letter-spacing: 0.2px;
     border: none;
     cursor: pointer;
+    margin-bottom: 16px;
 }
 
+@media (min-width: 992px) {
+    .login-button {
+        height: 42px;
+        font-size: 16px;
+    }
+}
 .signup-button {
     width: 100%;
     height: 34px;
     border-radius: 10px;
     background-color: #E2FCD9;
+    border: none; 
+    margin-bottom: 20px;
+}
+
+.signup-button a {
+    width: 100%;
+    text-decoration: none;
     color: #3ECF4C;
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.2px;
-    border: none;
     cursor: pointer;
-    text-decoration: none;
+    justify-content: center;
+    display: flex;
     text-align: center;
 }
 
-.signup-button a {
-    display: block;
-    width: 100%;
-    right: 138px;
-    text-decoration: none;
-    color: #3ECF4C;
-    cursor: pointer;
-
+@media (min-width: 992px) {
+    .signup-button {
+        height: 42px;
+        margin-bottom: 24px;
+    }
+    .signup-button a {
+        font-size: 16px;
+    }
 }
-
 .login-card-action p {
-    margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -216,15 +334,32 @@ a {
     text-align: center;
 }
 
+@media (min-width: 992px) {
+    .login-card-action p {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+.google {
+    width: 100%;
+}
+
 .google-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px 0px;
     gap: 8px;
     width: 100%;
     height: 34px;
     border-radius: 10px;
+    border: 1px solid #F1F1F1;
     background-color: #FFFFFF;
+    
+}
+
+.google-button p {
     color: #4A505C;
     font-weight: 700;
     font-size: 14px;
@@ -233,7 +368,6 @@ a {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    text-align: center;
 }
 
 .google-button img {
@@ -241,7 +375,16 @@ a {
     height: 20px;
 }
 
+@media (min-width: 992px) {
+    .google-button {
+        height: 42px;
+    }
+    .google-button p {
+        font-size: 16px;
+    }
+}
+
 span {
     color: red;
 }
- 
+/* Login */
