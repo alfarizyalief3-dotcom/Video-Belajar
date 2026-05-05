@@ -752,9 +752,6 @@ display: none;
   margin-bottom: 8px;
 }
 
-.item {
-  /* border-bottom: 1px solid #ccc; */
-}
 
 
 .item label {
@@ -776,13 +773,10 @@ display: none;
 }
 
 
-
-/* hidden checkbox */
 .item input {
   display: none;
 }
 
-/* isi dropdown */
 .content {
   display: flex;
   flex-direction: column;
@@ -793,13 +787,11 @@ display: none;
   gap: 10px;
 }
 
-/* saat diklik */
 .item input:checked ~ .content {
   max-height: 100%;
   padding: 10px 15px;
 }
 
-/* rotate panah */
 .item input:checked + label::after {
   transform: rotate(90deg);
 }
@@ -811,6 +803,11 @@ display: none;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.content a:hover {
+  color: #F64920;
 }
 
 @media (min-width: 768px) {
@@ -855,6 +852,7 @@ display: none;
 }
 
 .item label {
+  cursor:auto;
   font-size: 16px;
 }
 
@@ -942,6 +940,10 @@ display: none;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.social a:hover {
+  color: #F64920;
 }
 
 .kontak p {
